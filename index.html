@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documento sin título</title>
+<link rel="stylesheet" type="text/css" href="mi_ccs/mi_css.css">
+<link rel="stylesheet" type="text/css" href="icomoon/style.css">
+<link rel="stylesheet" type="text/css" href="icomoon_5/style.css">
+</head>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script>
+
+$(document).ready(function()
+{
+	
+		
+	
+//--------------------------------menu movil----------------------------------------------------------------------------------//	
+	$('.icon-menu').click(function()
+	{
+		$('nav>ul').slideDown()
+		$('.icon-menu').hide()
+		
+		
+		$('.icon-ifixit').show()
+	})
+	$('.icon-ifixit').click(function()
+	{
+		$('nav>ul').slideUp()
+		$('.icon-menu').show()
+		$('.icon-ifixit').hide()
+		
+	})
+	$(window).resize(function()
+	{
+		if(window.matchMedia('(min-width:1023px)').matches)
+		{
+			$('nav>ul').css({'display':'flex'})
+			$('.icon-ifixit').hide()
+			$('.icon-menu').hide()
+		}
+		else
+		{
+			$('nav>ul').css({'display':'none'})
+			$('.icon-menu').show()
+			$('.icon-ifixit').hide()
+		}
+	})
+	
+	
+	//-------------------------------------------------------------------//
+	
+	//$('nav>ul>li').click(function()
+	
+	//{
+		//$('nav>ul>li>ul>li').hide()
+		//$('nav>ul>li>ul').slideDown()
+		
+	//})
+	$('.icon-circle-down').click(function()
+	{
+		$('nav>ul>li>ul').slideDown()
+		$('.icon-circle-down').hide()
+		
+		
+		$('.icon-circle-up').show()
+	})
+	$('.icon-circle-up').click(function()
+	{
+		$('nav>ul>li>ul').slideUp()
+		$('.icon-circle-down').show()
+		$('.icon-circle-up').hide()
+		
+	})
+	
+//---------------------------------fin de menu movil---------------------------------------------------------------------------//
+
+	
+})// document ready
+</script>
+<body>
+
+<header>
+
+
+
+    <h1>
+   <!-- Bar --><a class="inicio" href="index.html"><span class="rojo">Restaurant </a></span>Luciano
+    <span class="icon-menu"> </span>
+	<span class="icon-ifixit"> </span>
+    
+    
+    
+    
+    
+    
+
+<!--<a href="sesion/usuario_pasword.php"><span class="icon-user"></span></a> -->
+
+
+    
+    </h1>
+
+
+</header>
+<!--/*//////////////////////////////////////////////////////////////////////////////////////////////*/-->
+<nav>
+    <ul>
+        <li>
+        	<a class="actual" href="index.html">Inicio</a>
+        </li>
+        
+       <li>
+        	<a href="#">Propuestas<span class="icon-circle-down"></span><span class="icon-circle-up"></span> </a>
+            	
+            	<ul>
+                	
+                    <li>
+                    <a href="degustacion.php"> Degustacion <span class="icon-spoon-knife"></span> </a>
+                    </li>
+                     <li>
+                    <a href="bodega.php"> Bodega <span class="icon-glass"></span></a>
+                    </li> 
+			</ul>             	    
+        </li>
+        
+        <li>
+        	<!--<a href="galeria.php">Galeria</a> -->
+        </li>
+        
+        <li>
+        	<a href="contacto.php">Contacto</a>
+        </li>
+    </ul>
+</nav>
+<!--/*//////////////////////////////////////////////////////////////////////////////////////////////*/-->
+<div class="slider">
+    <ul>
+  
+        <li>
+        	 <img src="images/5.jpg" width="1920" height="1080" alt="1_index">
+        </li>
+        
+        <li>
+        	 <img src="images/2.jpg" width="1920" height="1080" alt="2">
+        </li>
+        
+        <li>
+        	<img src="images/3.jpg" width="1920" height="1080" alt="3">
+        </li>
+        
+        <li>
+        	<img src="images/4.jpg" width="1920" height="1080" alt="4">
+        </li>
+        
+        <li>
+			<img src="images/5.jpg" width="1920" height="1080" alt="5">
+        </li>
+    
+    </ul>
+</div>
+<!--/*//////////////////////////////////////////////////////////////////////////////////////////////*/-->
+
+<article>
+	<h2>
+   		<i> <strong>BIEN<span class="rojo">VENI</span>DOS</strong>
+        
+	</h2>
+    <p class="bienvenido">
+  <img src="images/luciano.jpeg" alt="bienvenido">
+    </p>
+    <br>
+    </article>
+ 
+ 
+    
+    <article class="flex">
+    <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+<p class="pimg">
+<img src="images/7.jpg"  alt="7">
+</p>
+    
+
+</article>
+
+
+
+ 
+    
+
+    
+
+ <article class="flex">
+ 
+ <p class="pimg">
+<img src="images/6.jpg"  alt="6">
+</p>
+    <p>
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+    <!--class="imagen_flex"-->
+    
+</article>
+
+
+
+<div class="galeria">
+
+
+
+
+</div>
+
+<br><br>
+
+<div class="imagenes">
+ <ol>
+        <li>
+        	<img class="zoom" src="images/8.jpg" width="3840" height="2160" alt="1">
+        </li>
+        <br><br>
+        <li>
+        	<img class="zoom" src="images/9.jpg" width="3840" height="2160" alt="2">
+        </li>
+        <br><br>
+        <li>
+        	<img class="zoom" src="images/10.jpg" width="3840" height="2160" alt="3">
+        </li>
+        <br><br>
+        <li>
+        	<img class="zoom" src="images/11.jpg" width="3840" height="2160" alt="4">
+        </li>
+        <br><br>
+    </ol>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="espacio"> </div>
+
+
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.543686398928!2d-0.03954068511930432!3d39.99630168902616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5fffffd069aca3%3A0xb904d379dc50e797!2sBar%20restaurante%20luciano!5e0!3m2!1ses!2ses!4v1640628574688!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+
+
+<footer>
+        
+	<p>		<a class="silver" href="#">		<span class="icon-instagram1">	</span>		Instagram		</a>	</p>
+	<p>		<a class="silver" href="#">		<span class="icon-twitter">		</span>		Twitter			</a>	</p>
+	<p>		<a class="silver" href="#"><span class="icon-facebook"></span>		Facebook</a></p>
+	
+        
+
+
+</footer>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+</body>
+</html>
